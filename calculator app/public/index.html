@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <span><h1>Calculator</h1></span>
+    <div class="main">
+        <div class="calculator">
+            <input onfocus="this.style.border='none'" type="text" id="num"><br>
+            <div class="btn">
+            <button onclick="calc(7)">7</button>
+            <button onclick="calc(8)">8</button>
+            <button onclick="calc(9)">9</button>
+            <button id="plus" onclick="calc('+')">+</button>
+            <br>
+            <button onclick="calc(4)">4</button>
+            <button onclick="calc(5)">5</button>
+            <button onclick="calc(6)">6</button>
+            <button id="minus" onclick="calc('-')">-</button>
+           
+            <br>
+            <button onclick="calc(1)">1</button>
+            <button onclick="calc(2)">2</button>
+            <button onclick="calc(3)">3</button>
+            <button id="multiply" onclick="calc('*')">x</button>
+            <br>
+            <button id="clear" onclick="clr()">C</button>
+            <button onclick="calc(0)">0</button>
+            <button onclick="equal()">=</button>
+            <button id="devide" onclick="calc('/')">/</button>
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
